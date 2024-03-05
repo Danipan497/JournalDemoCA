@@ -1,7 +1,6 @@
 ﻿using JournalDemoCA.Application.Features.JournalEntries.Queries;
 using JournalDemoCA.Domain.Common.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JournalDemoCA.WebAPI.Controllers

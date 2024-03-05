@@ -1,4 +1,6 @@
+using JournalDemoCA.Application;
 using JournalDemoCA.Application.Features.JournalEntries.Commands;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICreateJournalEntry, CreateJournalEntry>();
+builder.Services.AddMediatR(typeof(JournalDemoMediatREntrypoint).Assembly);
+
+
 
 var app = builder.Build();
 
