@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JournalDemoCA.Domain.Common.Entities
 {
-    public class JournalEntry
+    public class JournalEntry : BaseAuditableEntity
     {
         public int Id { get; set; }
         public string? FirstName { get; set; }
