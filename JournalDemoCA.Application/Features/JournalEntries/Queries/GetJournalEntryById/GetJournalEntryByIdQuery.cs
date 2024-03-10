@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Queries
+namespace JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryById
 {
     public record GetJournalEntryByIdQuery(int Id) : IRequest<JournalEntry>;
-    
+
     public class GetJournalEntryByIdClass
     {
         public int Id { get; set; }

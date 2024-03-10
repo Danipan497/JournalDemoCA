@@ -1,5 +1,6 @@
-﻿using JournalDemoCA.Application.Features.JournalEntries.Commands;
-using JournalDemoCA.Application.Features.JournalEntries.Queries;
+﻿using JournalDemoCA.Application.Features.JournalEntries.Commands.PostJournalEntry;
+using JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryById;
+using JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryList;
 using JournalDemoCA.Domain.Common.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

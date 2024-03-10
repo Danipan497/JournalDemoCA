@@ -1,16 +1,17 @@
-﻿using JournalDemoCA.Domain.Common.Entities;
+﻿using JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry.Interface;
+using JournalDemoCA.Domain.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Commands
+namespace JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry
 {
-    public class CreateJournalEntry : ICreateJournalEntry
+    public class CreateJournalEntryCommand : ICreateJournalEntry
     {
         private List<JournalEntry> entry = new();
-        public CreateJournalEntry()
+        public CreateJournalEntryCommand()
         {
             entry.Add(new JournalEntry { Id = 1, FirstName = "Daniel", LastName = "Pandza" });
             entry.Add(new JournalEntry { Id = 2, FirstName = "Paniel", LastName = "Dandza" });

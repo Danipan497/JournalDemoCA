@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Commands
+namespace JournalDemoCA.Application.Features.JournalEntries.Commands.PostJournalEntry
 {
     public record InsertJournalEntryCommand(string FirstName, string LastName) : IRequest<JournalEntry>
     {

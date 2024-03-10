@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Queries
+namespace JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryList
 {
     public record GetJournalEntryListQuery() : IRequest<List<JournalEntry>>;
 }

@@ -1,20 +1,15 @@
-﻿using JournalDemoCA.Application.Features.JournalEntries.Queries;
+﻿using JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryById;
+using JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryList;
 using JournalDemoCA.Domain.Common.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Handlers
+namespace JournalDemoCA.Application.Features.JournalEntries.Handlers.GetJournalEntryById
 {
-    public class GetJournalEnrtyByIdHandler : IRequestHandler<GetJournalEntryByIdQuery, JournalEntry>
+    public class GetJournalEntryByIdHandler : IRequestHandler<GetJournalEntryByIdQuery, JournalEntry>
     {
         private readonly IMediator _mediator;
 
-        public GetJournalEnrtyByIdHandler(IMediator mediator)
+        public GetJournalEntryByIdHandler(IMediator mediator)
         {
             _mediator = mediator;
         }

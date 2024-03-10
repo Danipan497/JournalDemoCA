@@ -1,5 +1,5 @@
-﻿using JournalDemoCA.Application.Features.JournalEntries.Commands;
-using JournalDemoCA.Application.Features.JournalEntries.Queries;
+﻿using JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry.Interface;
+using JournalDemoCA.Application.Features.JournalEntries.Queries.GetJournalEntryList;
 using JournalDemoCA.Domain.Common.Entities;
 using MediatR;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Handlers
+namespace JournalDemoCA.Application.Features.JournalEntries.Handlers.GetJournalEntryList
 {
     public class GetJournalEntryListHandler : IRequestHandler<GetJournalEntryListQuery, List<JournalEntry>>
     {

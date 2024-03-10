@@ -1,4 +1,5 @@
-﻿using JournalDemoCA.Application.Features.JournalEntries.Commands;
+﻿using JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry.Interface;
+using JournalDemoCA.Application.Features.JournalEntries.Commands.PostJournalEntry;
 using JournalDemoCA.Domain.Common.Entities;
 using MediatR;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JournalDemoCA.Application.Features.JournalEntries.Handlers
+namespace JournalDemoCA.Application.Features.JournalEntries.Handlers.InsertJournalEntry
 {
     public class InsertJournalEntryHandler : IRequestHandler<InsertJournalEntryCommand, JournalEntry>
     {

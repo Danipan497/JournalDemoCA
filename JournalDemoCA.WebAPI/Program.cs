@@ -1,6 +1,7 @@
 using JournalDemoCA.Application;
 using JournalDemoCA.Application.Extensions;
-using JournalDemoCA.Application.Features.JournalEntries.Commands;
+using JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry;
+using JournalDemoCA.Application.Features.JournalEntries.Commands.CreateJournalEntry.Interface;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<ICreateJournalEntry, CreateJournalEntry>();
+builder.Services.AddSingleton<ICreateJournalEntry, CreateJournalEntryCommand>();
 builder.Services.AddApplicationLayer();
 
 var app = builder.Build();
